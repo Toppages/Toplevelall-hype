@@ -1,0 +1,70 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  border-radius: 15px; /* Bordes redondeados para el contenedor del carrusel */
+
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carouselItem {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Bordes redondeados para cada item del carrusel */
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      object-fit: contain;
+      border-radius: 15px; /* Bordes redondeados para las imágenes */
+    }
+  }
+
+  .carouselDots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background-color: #E4372E;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .carouselControl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%; /* Bordes redondeados para los controles */
+
+    &.prev {
+      left: 10px;
+    }
+
+    &.next {
+      right: 10px;
+    }
+  }
+}

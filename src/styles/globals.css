@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Estilos predeterminados para el modo oscuro */
+:root {
+  --background-color: #0c2a85; /* Color de fondo para modo oscuro */
+  --text-color: white; /* Color de texto para modo oscuro */
+}
+
+[data-theme="light"] {
+  --background-color: #F4F8FB; /* Color de fondo para modo claro */
+  --text-color: #333333; /* Color de texto para modo claro */
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #E4372E; /* Color del botón */
+  color: white;
+}
+
+/* Añadir transiciones para cambios suaves de tema */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff; /* Color de bullet inactivo */
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important; /* Color de bullet activo */
+  opacity: 1;
+  transform: scale(1.2);
+}

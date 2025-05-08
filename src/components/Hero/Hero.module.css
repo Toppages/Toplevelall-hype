@@ -1,0 +1,59 @@
+.hero {
+  height: 100vh;
+  background-image: url('https://res.cloudinary.com/di0btw2pi/image/upload/v1745268437/TOPLEVEL_HOME_jtllya.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background-attachment: fixed; 
+  background-size: cover; 
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('https://res.cloudinary.com/di0btw2pi/image/upload/v1745268437/TOPLEVEL_HOME_jtllya.png');
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 0 15px;
+  }
+}
