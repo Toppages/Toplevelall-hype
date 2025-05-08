@@ -36,14 +36,7 @@ const Footer = () => {
             <p className={`text-sm ${textColor} max-w-xs`}>
               Centro de recargas para Free Fire, Roblox y más. Rápido, seguro y confiable.
             </p>
-            <div className="flex space-x-4 mt-2">
-              <a href="https://www.facebook.com/toplevelgamesve" target="_blank" rel="noopener noreferrer" className={`transition-colors duration-200 ${textColor} ${hoverColor}`}>
-                <Facebook size={22} className="hover:scale-110 transition-transform" />
-              </a>
-              <a href="https://www.instagram.com/toplevelgames_?igsh=MTRxemJqNG5wMW1zdA==" target="_blank" rel="noopener noreferrer" className={`transition-colors duration-200 ${textColor} ${hoverColor}`}>
-                <Instagram size={22} className="hover:scale-110 transition-transform" />
-              </a>
-            </div>
+           
           </div>
 
           <div className="flex flex-col items-center md:items-start space-y-2">
